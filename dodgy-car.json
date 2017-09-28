@@ -8,7 +8,20 @@
   "paths": {
     "/dodgy-car": {
       "post": {
-        "description": "Create Dodgy Car Report"
+        "description": "Create Dodgy Car Report",
+        "responses": {
+          "200": {}
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasDodgy Car Report"
+              }
+            }
+          },
+          "required": true
+        }
       }
     }
   },
