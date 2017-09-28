@@ -1,1 +1,33 @@
-{"info":{"title":"Dodgy Car","description":"Dodgy Car API","version":"1.0.0"},"openapi":"3.0.0"}
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Dodgy Car",
+    "description": "Dodgy Car API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/dodgy-car": {
+      "post": {
+        "description": "Create Dodgy Car Report"
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Dodgy Car Report": {
+        "properties": {
+          "vehicleNumberPlate": {
+            "type": "string"
+          },
+          "faultDetails": {
+            "type": "string"
+          },
+          "dateReported": {
+            "format": "date-time",
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
