@@ -10,7 +10,11 @@
       "post": {
         "description": "Create Dodgy Car Report",
         "responses": {
-          "200": {}
+          "200": {},
+          "204": {},
+          "400": {
+            "description": "Invalid Request Received"
+          }
         },
         "requestBody": {
           "content": {
