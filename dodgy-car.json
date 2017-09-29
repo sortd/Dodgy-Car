@@ -7,8 +7,20 @@
   },
   "paths": {
     "/dodgy-car": {
+      "get": {
+        "description": "Retrieve Dodgy Car Reports",
+        "responses": {
+          "200": {}
+        }
+      },
       "post": {
         "description": "Create Dodgy Car Report",
+        "parameters": [
+          {
+            "name": "reportedDateEnd",
+            "in": "query"
+          }
+        ],
         "responses": {
           "200": {},
           "204": {},
