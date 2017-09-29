@@ -22,7 +22,25 @@
           },
           "required": true
         }
-      }
+      },
+      "parameters": [
+        {
+          "name": "reportedDateStart",
+          "in": "query",
+          "schema": {
+            "format": "date-time",
+            "type": "string"
+          }
+        },
+        {
+          "name": "reportedDateEnd",
+          "in": "query",
+          "schema": {
+            "format": "date-time",
+            "type": "string"
+          }
+        }
+      ]
     }
   },
   "components": {
